@@ -416,7 +416,8 @@ section { position: relative; z-index: 1; }
 .hero-v2__scroll {
   position: absolute;
   bottom: 32px;
-  left: 48px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -472,7 +473,6 @@ section { position: relative; z-index: 1; }
     max-width: 400px;
     order: -1;
   }
-  .hero-v2__scroll { left: 24px; }
 }
 
 .hero-inner { max-width: 900px; }
