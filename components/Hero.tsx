@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 
+import { ParticleTextEffect } from "@/components/ui/particle-text-effect";
+
 const fadeUp = (delay: number) => ({
   initial: { opacity: 0, y: 32 },
   animate: { opacity: 1, y: 0 },
@@ -32,11 +34,10 @@ export default function Hero() {
           </motion.div>
 
           {/* Name */}
-          <motion.h1 className="hero-v2__name hero-v2__name--stacked" {...fadeUp(0.3)}>
-            <span className="name-white">Sayim</span>
-            <br />
-            <span className="name-accent">Mullick</span>
-          </motion.h1>
+          <h1 className="sr-only">Sayim Mullick</h1>
+          <motion.div className="w-full -ml-4 md:-ml-12 mb-6" {...fadeUp(0.3)}>
+            <ParticleTextEffect words={["SAYIM", "MULLICK"]} />
+          </motion.div>
 
           {/* Bio */}
           <motion.p className="hero-v2__bio hero-v2__bio--v3" {...fadeUp(0.5)}>
