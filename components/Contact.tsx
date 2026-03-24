@@ -4,7 +4,7 @@ import { Reveal } from "./Reveal";
 
 const links = [
   { icon: "✉️", label: "Email Me", href: "mailto:sayimmullick.it224068@bppimt.ac.in" },
-  { icon: "💼", label: "LinkedIn", href: "https://www.linkedin.com/in/sayimmullick-250722392" },
+  { icon: "💼", label: "LinkedIn", href: "https://www.linkedin.com/in/sayim-mullick-250722392/" },
   { icon: "⛓️", label: "ReliefChain", href: "https://relief-test.vercel.app" },
   { icon: "📝", label: "Napkin2", href: "https://napkin2-web-final.vercel.app" },
 ];
