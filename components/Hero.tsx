@@ -35,7 +35,7 @@ export default function Hero() {
 
           {/* Name */}
           <h1 className="sr-only">Sayim Mullick</h1>
-          <motion.div className="w-full -ml-4 md:-ml-12 mb-6" {...fadeUp(0.3)}>
+          <motion.div className="w-full mb-6" {...fadeUp(0.3)}>
             <ParticleTextEffect words={["SAYIM", "MULLICK"]} />
           </motion.div>
 
