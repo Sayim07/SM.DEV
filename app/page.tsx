@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+import Landing from "@/components/Landing";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -6,24 +10,30 @@ import Projects from "@/components/Projects";
 import Achievements from "@/components/Achievements";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Cursor from "@/components/Cursor";
 
 export default function Home() {
+  const [entered, setEntered] = useState(false);
+
   return (
     <>
-      <Navbar />
-      <Hero />
-      <div className="divider"></div>
-      <About />
-      <div className="divider"></div>
-      <Skills />
-      <div className="divider"></div>
-      <Projects />
-      <div className="divider"></div>
-      <Achievements />
-      <div className="divider"></div>
-      <Contact />
-      <Footer />
+      {!entered && <Landing onEnter={() => setEntered(true)} />}
+      {entered && (
+        <>
+          <Navbar />
+          <Hero />
+          <div className="divider" />
+          <About />
+          <div className="divider" />
+          <Skills />
+          <div className="divider" />
+          <Projects />
+          <div className="divider" />
+          <Achievements />
+          <div className="divider" />
+          <Contact />
+          <Footer />
+        </>
+      )}
     </>
   );
 }
