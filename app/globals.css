@@ -73,6 +73,16 @@ body::before {
   z-index: 0;
 }
 
+/* Global keyframe used by splash / landing dot indicators */
+@keyframes spline-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.7); }
+}
+
+/* hide scrollbar globally for scroll-jacking containers */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { scrollbar-width: none; }
+
 /* Reveal on scroll base classes */
 .reveal {
   opacity: 0;
