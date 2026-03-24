@@ -1,5 +1,10 @@
 @import "tailwindcss";
-@config "../tailwind.config.js";
+
+@theme {
+  --color-accent: #4fffb0;
+  --color-accent2: #7b61ff;
+  --color-bg: #080a0f;
+}
 
 .sr-only {
   position: absolute;
