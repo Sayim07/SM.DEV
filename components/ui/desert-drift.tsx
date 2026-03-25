@@ -8,10 +8,10 @@ const NEON = "#00ff88";
 const CHIPS = ["React", "Next.js", "TypeScript", "Solidity", "Web3"];
 
 interface DesertDriftProps {
-  onEnter: () => void;
+  onEnter?: () => void;
 }
 
-export const Component = ({ onEnter }: DesertDriftProps) => {
+export const Component = ({ onEnter = () => {} }: DesertDriftProps) => {
   const [leaving, setLeaving] = useState(false);
 
   const handleEnter = () => {
